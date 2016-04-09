@@ -549,3 +549,11 @@ BROKEN=
 EXPECT=''
 
 run_test
+
+NAME='rahash2 -E rot'
+CMDS="!rahash2 -E rot -S s:13 -s hello' world\n'"
+BROKEN=
+EXPECT='uryyb jbeyq
+'
+
+run_test
