@@ -565,3 +565,19 @@ EXPECT='hello world
 '
 
 run_test
+
+NAME='rahash2 -E rol'
+CMDS='!echo -en "\x31\xed\x49\x89" | rahash2 -E rol -S 03 -s - | rax2 -S'
+BROKEN=
+EXPECT='88684848
+'
+
+run_test
+
+NAME='rahash2 -E ror'
+CMDS='!echo -en "\x62\xda\x92\x12" | rahash2 -E ror -S 04 -s - | rax2 -S'
+BROKEN=
+EXPECT='060d0901
+'
+
+run_test
